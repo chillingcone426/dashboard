@@ -1,4 +1,4 @@
-export const API_URL = "https://ticketsapi2.rankblox.xyz/"
+export const API_URL = "https://ticketsapi2.rankblox.xyz"
 export const PLACEHOLDER_DOCS_URL = "https://docs.ticketsbot.net/setup/placeholders.html"
 
 export const OAUTH = {
