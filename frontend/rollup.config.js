@@ -73,8 +73,8 @@ export default {
             env: JSON.stringify({
 				CLIENT_ID: 1328078910168109106,
 				REDIRECT_URI: 'https://tickets.rankblox.xyz/redirect',
-				API_URL: 'https://ticketsapi2.rankblox.xyz/',
-				WS_URL: 'https://ticketsapi2.rankblox.xyz/',
+				API_URL: 'https://ticketsapi2.rankblox.xyz',
+				WS_URL: 'https://ticketsapi2.rankblox.xyz',
 			})
         }),
 
