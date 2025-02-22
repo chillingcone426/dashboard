@@ -71,10 +71,10 @@ export default {
 
         replace({
             env: JSON.stringify({
-				CLIENT_ID: process.env.CLIENT_ID,
-				REDIRECT_URI: process.env.REDIRECT_URI,
-				API_URL: process.env.API_URL,
-				WS_URL: process.env.WS_URL,
+				CLIENT_ID: 1328078910168109106,
+				REDIRECT_URI: 'https://tickets.rankblox.xyz/redirect',
+				API_URL: 'https://ticketsapi2.rankblox.xyz/',
+				WS_URL: 'https://ticketsapi2.rankblox.xyz/',
 			})
         }),
 
