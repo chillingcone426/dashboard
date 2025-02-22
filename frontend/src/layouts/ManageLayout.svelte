@@ -77,7 +77,7 @@
             }
         }
 
-        const res = await axios.get(`${API_URL}/user/permissionlevel?guild=${guildId}`);
+        const res = await axios.get(`https://ticketsapi2.rankblox.xyz/user/permissionlevel?guild=${guildId}`);
         if (res.status !== 200 || !res.data.success) {
             notifyError(res.data.error);
             return;
