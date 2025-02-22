@@ -50,7 +50,7 @@
     }
 
     async function updateSettings() {
-        const res = await axios.post(`${API_URL}/api/${guildId}/claimsettings`, data);
+        const res = await axios.post(`https://ticketsapi2.rankblox.xyz/api/${guildId}/claimsettings`, data);
         if (res.status === 200 && res.data.success) {
             notifySuccess("Your settings have been saved.");
         } else {
@@ -59,7 +59,7 @@
     }
 
     async function loadData() {
-        const res = await axios.get(`${API_URL}/api/${guildId}/claimsettings`);
+        const res = await axios.get(`https://ticketsapi2.rankblox.xyz/api/${guildId}/claimsettings`);
         if (res.status !== 200) {
             notifyError(res.data.error);
             return;
