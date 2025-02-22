@@ -75,7 +75,7 @@
         data.since_open_with_no_response = sinceOpenDays * 86400 + sinceOpenHours * 3600 + sinceOpenMinutes * 60;
         data.since_last_message = sinceLastDays * 86400 + sinceLastHours * 3600 + sinceLastMinutes * 60;
 
-        const res = await axios.post(`${API_URL}/api/${guildId}/autoclose`, data);
+        const res = await axios.post(`https://ticketsapi2.rankblox.xyz/api/${guildId}/autoclose`, data);
         if (res.status !== 200) {
             notifyError(res.data.error);
             return;
@@ -85,7 +85,7 @@
     }
 
     async function loadPremium() {
-        const res = await axios.get(`${API_URL}/api/${guildId}/premium`);
+        const res = await axios.get(`https://ticketsapi2.rankblox.xyz/api/${guildId}/premium`);
         if (res.status !== 200) {
             notifyError(res.data.error);
             return;
@@ -95,7 +95,7 @@
     }
 
     async function loadSettings() {
-        const res = await axios.get(`${API_URL}/api/${guildId}/autoclose`);
+        const res = await axios.get(`https://ticketsapi2.rankblox.xyz/api/${guildId}/autoclose`);
         if (res.status !== 200) {
             notifyError(res.data.error);
             return;
